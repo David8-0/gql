@@ -4,6 +4,11 @@ export const CreateProductMutation = gql`
   mutation CreateProduct($input: CreateProductInput!) {
     createProduct(input: $input) {
       id
+      name
+      description
+      price
+      createdAt
+      userId
     }
   }
 `
